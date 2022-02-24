@@ -21,6 +21,14 @@ public class MathScreen extends AppCompatActivity {
     private TextView resultText;
     private int result;
 
+    boolean question1 = false;
+    boolean question2 = false;
+    boolean question3 = false;
+    boolean question4 = false;
+    boolean question5 = false;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,12 +48,13 @@ public class MathScreen extends AppCompatActivity {
         resultText.setEnabled(false);
 
 
+
         //TODO: Add method to check if the answer is correct
         questionOneCheckerA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (questionOneCheckerA.isChecked()) {
-                    result += 1;
+                   question1 = true;
                 }
             }
         });
@@ -54,7 +63,7 @@ public class MathScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (questionTwoCheckerB.isChecked()) {
-                    result += 1;
+                    question2 = true;
                 }
             }
         });
@@ -63,7 +72,7 @@ public class MathScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (questionThreeCheckerC.isChecked()) {
-                    result += 1;
+                    question3 = true;
                 }
             }
         });
@@ -72,7 +81,7 @@ public class MathScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (questionFourCheckerB.isChecked()) {
-                    result += 1;
+                    question4 = true;
                 }
             }
         });
@@ -81,7 +90,7 @@ public class MathScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (questionFiveCheckerB.isChecked()) {
-                    result += 1;
+                    question5 = true;
                 }
             }
         });
@@ -89,6 +98,23 @@ public class MathScreen extends AppCompatActivity {
         getResults.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (question1){
+                    result++;
+                }
+                if (question2){
+                    result++;
+                }
+                if (question3){
+                    result++;
+                }
+                if (question4){
+                    result++;
+                }
+                if (question5){
+                    result++;
+                }
+
+
                 String stringResult = String.valueOf(result) + " / 5";
                 resultText.setText(stringResult);
                 resultText.setTextSize(1, 50);

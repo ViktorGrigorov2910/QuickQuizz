@@ -17,6 +17,10 @@ public class CryptoScreen extends AppCompatActivity {
     private TextView resultText ;
     private int result;
 
+    boolean question1 = false;
+    boolean question2 = false;
+    boolean question3 = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,7 +39,7 @@ public class CryptoScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (checkBox_crypto_C1.isChecked()) {
-                    result ++;
+                   question1 = true;
                 }
             }
         });
@@ -44,7 +48,7 @@ public class CryptoScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (checkBox_crypto_B2.isChecked()) {
-                    result ++;
+                    question2 = true;
                 }
             }
         });
@@ -53,7 +57,7 @@ public class CryptoScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (checkBox_crypto_B3.isChecked()) {
-                    result ++;
+                    question3 = true;
                 }
             }
         });
@@ -61,6 +65,16 @@ public class CryptoScreen extends AppCompatActivity {
         get_results_crypto.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (question1){
+                    result++;
+                }
+                if (question2){
+                    result++;
+                }
+                if (question3){
+                    result++;
+                }
+
                 String stringResult = String.valueOf(result) + " / 3";
                 resultText.setText(stringResult);
                 resultText.setTextSize(1,50);

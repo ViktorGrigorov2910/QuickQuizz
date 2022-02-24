@@ -16,6 +16,11 @@ public class GeographyScreen extends AppCompatActivity {
     private TextView resultText ;
     private int result;
 
+    boolean question1 = false;
+    boolean question2 = false;
+    boolean question3 = false;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +39,7 @@ public class GeographyScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (question_1_checker_A_geo.isChecked()) {
-                    result ++;
+                    question1 = true;
                 }
             }
         });
@@ -43,7 +48,7 @@ public class GeographyScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (question_2_checker_A_geo.isChecked()) {
-                    result ++;
+                    question2 = true;
                 }
             }
         });
@@ -52,7 +57,7 @@ public class GeographyScreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (question_3_checker_A_geo.isChecked()) {
-                    result ++;
+                    question3 = true;
                 }
             }
         });
@@ -60,6 +65,16 @@ public class GeographyScreen extends AppCompatActivity {
         get_results_geo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (question1){
+                    result++;
+                }
+                if (question2){
+                    result++;
+                }
+                if (question3){
+                    result++;
+                }
+
                 String stringResult = String.valueOf(result) + " / 3";
                 resultText.setText(stringResult);
                 resultText.setTextSize(1,50);
