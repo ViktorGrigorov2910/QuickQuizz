@@ -75,14 +75,16 @@
             android:layout_height="52dp" android:id="@+id/geography_question_1"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.314" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.347"/>
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.347"
+            android:textColor="#050505"/>
     <TextView
             android:text="2. How many directions are there?"
             android:layout_width="310dp"
             android:layout_height="52dp" android:id="@+id/geography_question_2"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintHorizontal_bias="0.287" app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.521"/>
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.521"
+            android:textColor="#050505"/>
     <TextView
             android:text="3. Which is the biggest country in Europe?"
             android:layout_width="320dp"
@@ -91,7 +93,8 @@
             app:layout_constraintTop_toBottomOf="@+id/geography_question_2"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintVertical_bias="0.125" app:layout_constraintHorizontal_bias="0.318"/>
+            app:layout_constraintVertical_bias="0.125" app:layout_constraintHorizontal_bias="0.318"
+            android:textColor="#000000"/>
     <CheckBox
             android:text="Sofia"
             android:layout_width="wrap_content"
@@ -107,7 +110,7 @@
             app:layout_constraintTop_toBottomOf="@+id/question_3_A_geo"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="28dp" android:layout_marginStart="28dp"
-            app:layout_constraintVertical_bias="0.187"/>
+            app:layout_constraintVertical_bias="0.187" app:backgroundTint="#2E6131"/>
     <TextView
             android:layout_width="143dp"
             android:layout_height="55dp" android:id="@+id/result_geography"

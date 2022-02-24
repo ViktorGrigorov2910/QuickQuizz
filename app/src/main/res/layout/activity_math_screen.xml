@@ -202,7 +202,8 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_bias="0.063" app:layout_constraintVertical_bias="0.837"
-            app:backgroundTint="#4E8888"/>
+            app:backgroundTint="#673AB7" android:textColorHighlight="#9C27B0" app:rippleColor="#E5DFE6"
+            android:textColorLink="#5B2BB1"/>
     <TextView
             android:layout_width="172dp"
             android:layout_height="65dp"

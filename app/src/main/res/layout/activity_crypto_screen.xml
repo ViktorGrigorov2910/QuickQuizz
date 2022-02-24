@@ -91,7 +91,7 @@
             android:layout_marginTop="208dp"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.097"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.459"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" android:textColor="#0C0C0C"/>
     <TextView
             android:text="2. What is ERC-20 token?"
             android:layout_width="247dp"
@@ -99,7 +99,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintHorizontal_bias="0.097"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintVertical_bias="0.46"/>
+            app:layout_constraintVertical_bias="0.46" android:textColor="#090909"/>
     <ImageView
             android:layout_width="259dp"
             android:layout_height="158dp" app:srcCompat="@drawable/crypto_image" android:id="@+id/crypto_image"
@@ -113,7 +113,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.097"
-            app:layout_constraintVertical_bias="0.272"/>
+            app:layout_constraintVertical_bias="0.272" android:textColor="#040303"/>
     <CheckBox
             android:text="Vitalik Buterin"
             android:layout_width="114dp"
@@ -128,5 +128,6 @@
             android:layout_height="64dp" android:id="@+id/button_get_result_crypto"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.063"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.875"/>
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintVertical_bias="0.875"
+            app:backgroundTint="#BA1B98"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
