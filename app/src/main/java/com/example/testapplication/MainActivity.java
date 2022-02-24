@@ -7,44 +7,46 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
-private Button button;
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // Main screen
+        //Here you get presented the sections that are available
 
-        button =  findViewById(R.id.infoButton);
+        // Info Screen -> Information about the APP
+        button = findViewById(R.id.infoButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openInfoScreen();
-            }
-        });
+            }});
 
-        button =  findViewById(R.id.mathButton);
+        // Math Screen -> Math questions
+        button = findViewById(R.id.mathButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openMathScreen ();
-            }
-        });
+                openMathScreen();
+            }});
 
-        button =  findViewById(R.id.geographyButton);
+        // Geography Screen -> Geography questions
+        button = findViewById(R.id.geographyButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openGeographyScreen();
-            }
-        });
+            }});
 
+        // Crypto Screen -> Crypto questions
         button = findViewById(R.id.cryptoButton);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 openCryptoScreen();
-            }
-        });
+            }});
 
 
     }
@@ -59,19 +61,15 @@ private Button button;
         startActivity(intent);
     }
 
-    public void openMathScreen (){
-        Intent intent = new Intent(this , MathScreen.class);
+    private void openMathScreen() {
+        Intent intent = new Intent(this, MathScreen.class);
         startActivity(intent);
     }
 
-
-
-public void openInfoScreen (){
-    Intent intent = new Intent (this , InfoScreen.class);
-    startActivity(intent);
-}
-
-
+    private void openInfoScreen() {
+        Intent intent = new Intent(this, InfoScreen.class);
+        startActivity(intent);
+    }
 
 
 }

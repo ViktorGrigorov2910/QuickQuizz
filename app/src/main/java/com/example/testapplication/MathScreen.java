@@ -10,17 +10,16 @@ import android.os.Bundle;
 public class MathScreen extends AppCompatActivity {
 
 
-private CheckBox questionOneCheckerA;
-private CheckBox questionTwoCheckerB;
-private CheckBox questionThreeCheckerC;
-private CheckBox questionFourCheckerB;
-private CheckBox questionFiveCheckerB;
+    private CheckBox questionOneCheckerA;
+    private CheckBox questionTwoCheckerB;
+    private CheckBox questionThreeCheckerC;
+    private CheckBox questionFourCheckerB;
+    private CheckBox questionFiveCheckerB;
 
 
-private Button getResults ;
-private TextView resultText ;
-private int result;
-
+    private Button getResults;
+    private TextView resultText;
+    private int result;
 
 
     @Override
@@ -45,7 +44,7 @@ private int result;
         questionOneCheckerA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (questionOneCheckerA.isChecked()){
+                if (questionOneCheckerA.isChecked()) {
                     result += 1;
                 }
             }
@@ -92,13 +91,12 @@ private int result;
             public void onClick(View view) {
                 String stringResult = String.valueOf(result) + " / 5";
                 resultText.setText(stringResult);
-                resultText.setTextSize(1,50);
+                resultText.setTextSize(1, 50);
                 resultText.setEnabled(false);
             }
         });
 
     }
-
 
 
 }
